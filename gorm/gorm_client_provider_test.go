@@ -3,11 +3,11 @@ package gorm
 import (
 	"context"
 	"database/sql"
+	"github.com/luongdev/tenancy/provider"
+	"github.com/luongdev/tenancy/resolver"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 	"log"
-	"tenancy/provider"
-	"tenancy/resolver"
 	"testing"
 )
 

@@ -2,8 +2,8 @@ package gorm
 
 import (
 	"context"
+	"github.com/luongdev/tenancy/provider"
 	"gorm.io/gorm"
-	"tenancy/provider"
 )
 
 type ClientProvider provider.ClientProvider[*gorm.DB]

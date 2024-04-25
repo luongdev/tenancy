@@ -3,12 +3,12 @@ package gin
 import (
 	"bytes"
 	"github.com/gin-gonic/gin"
+	"github.com/luongdev/tenancy"
+	"github.com/luongdev/tenancy/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"net/http"
 	"net/http/httptest"
-	"tenancy"
-	"tenancy/mocks"
 	"testing"
 )
 

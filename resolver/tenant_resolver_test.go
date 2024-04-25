@@ -2,10 +2,10 @@ package resolver
 
 import (
 	"context"
+	"github.com/luongdev/tenancy"
+	"github.com/luongdev/tenancy/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"tenancy"
-	"tenancy/mocks"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package provider
 
 import (
 	"context"
-	"tenancy/resolver"
+	"github.com/luongdev/tenancy/resolver"
 )
 
 type DefaultDbProvider[TClient interface{}] struct {
@@ -10,11 +10,12 @@ type DefaultDbProvider[TClient interface{}] struct {
 	connectionStringResolver resolver.ConnectionStringResolver
 }
 
-func NewDbProvider[TClient interface{}](provider ClientProvider[TClient], resolver resolver.ConnectionStringResolver) *DefaultDbProvider[TClient] {
-	return &DefaultDbProvider[TClient]{
+func NewDbProvider[TClient interface{}](provider ClientProvider[TClient], resolver resolver.ConnectionStringResolver) (d *DefaultDbProvider[TClient]) {
+	d = &DefaultDbProvider[TClient]{
 		clientProvider:           provider,
 		connectionStringResolver: resolver,
 	}
+	return
 }
 
 func (d *DefaultDbProvider[TClient]) Get(ctx context.Context, tenantId string) (TClient, error) {

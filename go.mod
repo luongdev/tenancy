@@ -1,4 +1,4 @@
-module tenancy
+module github.com/luongdev/tenancy
 
 go 1.22
 

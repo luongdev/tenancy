@@ -2,7 +2,7 @@ package resolver
 
 import (
 	"context"
-	"tenancy"
+	"github.com/luongdev/tenancy"
 )
 
 type ConnectionStringResolveFunc func(ctx context.Context, id string) (string, error)

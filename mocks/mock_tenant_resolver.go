@@ -2,8 +2,8 @@ package mocks
 
 import (
 	"context"
+	"github.com/luongdev/tenancy"
 	"github.com/stretchr/testify/mock"
-	"tenancy"
 )
 
 type MockTenantResolver struct {
